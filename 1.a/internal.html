@@ -1,0 +1,22 @@
+<html>
+<head>
+ <title>Linking JavaScript File</title>
+<script>
+// Function to display an alert message
+function greetUser() {
+ alert("Hello from the external JavaScript file!");
+}
+// Execute after HTML is completely loaded
+document.addEventListener("DOMContentLoaded", function () {
+ const myButton = document.getElementById("myButton");
+if (myButton) {
+ myButton.addEventListener("click", greetUser);
+ }
+});
+</script>
+</head>
+<body>
+ <h1>Welcome!</h1>
+ <button id="myButton">Click Me</button>
+</body>
+</html>
